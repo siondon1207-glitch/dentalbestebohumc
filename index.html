@@ -1,23 +1,1184 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+
+
+  <!-- 구조화 데이터 JSON-LD (검색엔진 및 AI 크롤러 최적화) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://dental.reliabledone.com/cavity-cost-guide#webpage",
+        "url": "https://dental.reliabledone.com/cavity-cost-guide",
+        "name": "2026년 충치치료비용 완벽 가이드: 단계별 재료 가격 비교 및 비급여 견적 계산기",
+        "description": "2026년 기준 충치치료비용, 레진, 인레이, 크라운, 신경치료 재료별 평균 가격과 건강보험 적용 범위에 대한 포괄적 정보.",
+        "inLanguage": "ko-KR",
+        "about": {
+          "@type": "MedicalCondition",
+          "name": "치아우식증 (충치)",
+          "alternateName": "Dental Caries",
+          "possibleTreatment": [
+            {
+              "@type": "MedicalTherapy",
+              "name": "복합레진 충전치료"
+            },
+            {
+              "@type": "MedicalTherapy",
+              "name": "인레이 및 온레이 보철치료"
+            },
+            {
+              "@type": "MedicalTherapy",
+              "name": "근관치료 및 크라운 보철"
+            }
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "덴탈케어 메디컬 리서치 센터",
+          "url": "https://dental.reliabledone.com"
+        },
+        "datePublished": "2026-01-05",
+        "dateModified": "2026-08-20"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://dental.reliabledone.com/cavity-cost-guide#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "충치치료비용은 치과마다 왜 차이가 나나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "충치치료 중 복합레진, 세라믹 인레이, 지르코니아 크라운 등 대부분의 보철 재료는 비급여 항목에 해당합니다. 비급여 진료비는 의료법상 각 치과 의료기관이 자율적으로 책정하므로 병원의 위치, 의료진의 숙련도, 사용하는 기공소의 재료 퀄리티 및 장비 수준에 따라 가격 편차가 발생합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "2026년 기준 복합레진 충치치료의 건강보험 적용 기준은 어떻게 되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "만 12세 이하 어린이의 영구치에 발생한 충치에 대한 광중합형 복합레진 충전치료는 건강보험이 적용되어 본인부담률 약 30퍼센트 수준인 치아 1개당 약 2만 5천 원에서 3만 원 안팎으로 치료받을 수 있습니다. 만 13세 이상 청소년 및 성인의 광중합형 복합레진 치료는 비급여로 진행되어 치아 1개당 평균 8만 원에서 15만 원 선입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "신경치료를 받으면 비용이 얼마정도 발생하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "신경치료(근관치료) 자체는 국민건강보험 급여 항목입니다. 보통 3회에서 4회에 걸쳐 내원 치료를 진행하며 회당 본인부담금은 1만 원에서 2만 원 내외로 총 신경치료 순수 진료비는 5만 원에서 8만 원 안팎입니다. 다만 신경치료 후 치아 파절을 막기 위해 필수적으로 씌우는 코어 작업 및 크라운 보철치료는 비급여이므로 40만 원에서 70만 원의 추가 비용이 발생합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "인레이와 크라운 중 어떤 치료가 더 적합한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "충치가 상아질 일부에 국한되어 치아의 외벽 구조가 충분히 남아있는 2단계 충치에는 치아 삭제량이 적은 인레이 치료가 적합합니다. 반면 충치가 치수(신경)까지 도달했거나 치아의 50퍼센트 이상이 손상되어 씹는 힘을 견디기 힘든 경우에는 치아 전체를 덮어 보호하는 크라운 치료가 필수적입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "치과 실손의료보험 및 치아보험으로 충치치료비 환급이 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "일반 실손의료보험(실비)에서는 급여 항목인 아말감, 글래스아이오노머(GI), 신경치료 본인부담금에 대해 보장이 가능하지만 비급여 항목인 레진, 인레이, 크라운은 보상 대상에서 제외됩니다. 반면 별도로 가입한 정액형 치아보험의 경우 상품 약관에 명시된 보장 개시일(보통 90일 면책기간 및 1~2년 감액기간) 충족 시 레진, 인레이, 크라운 항목별로 정해진 보험금을 정액 수령할 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #0d9488;
+      --primary-dark: #0f766e;
+      --primary-light: #ccfbf1;
+      --secondary-color: #0284c7;
+      --secondary-light: #e0f2fe;
+      --accent-color: #e11d48;
+      --accent-soft: #ffe4e6;
+      --neutral-dark: #1e293b;
+      --neutral-mid: #475569;
+      --neutral-light: #f8fafc;
+      --neutral-card: #ffffff;
+      --border-color: #e2e8f0;
+      --border-focus: #14b8a6;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", Roboto, sans-serif;
+      background-color: #f0fdfa;
+      color: var(--neutral-dark);
+      line-height: 1.8;
+      font-size: 16.5px;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .content-card {
+      background: var(--neutral-card);
+      border-radius: var(--radius-lg);
+      padding: 45px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+      margin-bottom: 35px;
+    }
+
+    header.article-header {
+      margin-bottom: 35px;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 0.85em;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      font-weight: 800;
+      color: var(--neutral-dark);
+      line-height: 1.35;
+      margin-bottom: 15px;
+      letter-spacing: -0.5px;
+    }
+
+    .meta-info {
+      font-size: 0.9em;
+      color: var(--neutral-mid);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    h2 {
+      font-size: 1.65em;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-top: 45px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f1f5f9;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 60px;
+      height: 2px;
+      background-color: var(--primary-color);
+    }
+
+    h3 {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #0f172a;
+      margin-top: 28px;
+      margin-bottom: 14px;
+    }
+
+    h4 {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: var(--neutral-mid);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 1.4em;
+      color: #334155;
+      text-align: justify;
+    }
+
+    strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    .point-text {
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .warning-text {
+      color: var(--accent-color);
+      font-weight: 700;
+    }
+
+    /* 알림/콜아웃 박스 */
+    .callout {
+      background-color: #f8fafc;
+      border-left: 4px solid var(--primary-color);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 25px 0;
+    }
+
+    .callout.alert {
+      border-left-color: var(--accent-color);
+      background-color: #fff1f2;
+    }
+
+    .callout.info {
+      border-left-color: var(--secondary-color);
+      background-color: var(--secondary-light);
+    }
+
+    .callout-title {
+      font-weight: 700;
+      font-size: 1.05em;
+      margin-bottom: 8px;
+      color: var(--neutral-dark);
+    }
+
+    /* 반응형 계산기 컴포넌트 */
+    .calculator-wrapper {
+      background: linear-gradient(145deg, #f0fdfa, #e6fffa);
+      border: 2px solid #99f6e4;
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      margin: 35px 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .calculator-title {
+      font-size: 1.4em;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .calculator-desc {
+      font-size: 0.95em;
+      color: var(--neutral-mid);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 0.9em;
+      font-weight: 700;
+      color: #134e4a;
+      margin-bottom: 6px;
+    }
+
+    .form-group select, .form-group input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: var(--radius-sm);
+      background-color: #ffffff;
+      font-size: 0.95em;
+      color: var(--neutral-dark);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group select:focus, .form-group input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+    }
+
+    .btn-calc {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: #ffffff;
+      font-size: 1.1em;
+      font-weight: 700;
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+
+    .btn-calc:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
+    }
+
+    .calc-result-box {
+      margin-top: 25px;
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 22px;
+      border: 1px solid #ccfbf1;
+      display: none;
+    }
+
+    .calc-result-header {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: var(--neutral-dark);
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+
+    .calc-result-price {
+      font-size: 1.8em;
+      font-weight: 800;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    .calc-result-details {
+      font-size: 0.9em;
+      color: var(--neutral-mid);
+      line-height: 1.6;
+    }
+
+    /* 테이블 스타일링 */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 25px 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92em;
+    }
+
+    table.data-table th, table.data-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    table.data-table th {
+      background-color: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    table.data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    table.data-table tbody tr:hover {
+      background-color: #f8fafc;
+    }
+
+    /* CSS 기반 인터랙티브 차트 */
+    .chart-container {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin: 30px 0;
+    }
+
+    .chart-title {
+      font-weight: 700;
+      font-size: 1.05em;
+      margin-bottom: 18px;
+      color: var(--neutral-dark);
+      text-align: center;
+    }
+
+    .bar-group {
+      margin-bottom: 14px;
+    }
+
+    .bar-label-wrap {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88em;
+      margin-bottom: 4px;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .bar-track {
+      background-color: #e2e8f0;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 10px;
+      transition: width 1s ease-in-out;
+    }
+
+    .bar-fill-resin { width: 25%; background-color: #38bdf8; }
+    .bar-fill-inlay { width: 55%; background-color: #34d399; }
+    .bar-fill-gold { width: 75%; background-color: #fbbf24; }
+    .bar-fill-crown { width: 95%; background-color: #f87171; }
+
+    /* FAQ 아코디언 */
+    .faq-container {
+      margin: 30px 0;
+    }
+
+    .faq-card {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-card:hover {
+      border-color: #94a3b8;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: #ffffff;
+      padding: 18px 22px;
+      text-align: left;
+      border: none;
+      font-size: 1.02em;
+      font-weight: 700;
+      color: var(--neutral-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      outline: none;
+    }
+
+    .faq-toggle-icon {
+      font-size: 1.2em;
+      font-weight: 400;
+      color: var(--primary-color);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 20px 22px;
+      background: #f8fafc;
+      color: #334155;
+      font-size: 0.95em;
+      line-height: 1.7;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    /* 키워드 태그 클라우드 */
+    .keyword-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .keyword-tag {
+      background-color: #f1f5f9;
+      color: #475569;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85em;
+      font-weight: 500;
+      border: 1px solid #e2e8f0;
+    }
+
+    .keyword-tag.primary {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    /* 리스트 스타일 */
+    ul.custom-list, ol.custom-list {
+      margin: 15px 0 20px 25px;
+      color: #334155;
+    }
+
+    ul.custom-list li, ol.custom-list li {
+      margin-bottom: 8px;
+    }
+
+    /* 외부 링크 */
+    .reference-section {
+      background-color: #f8fafc;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 35px;
+      border: 1px solid var(--border-color);
+    }
+
+    .reference-links {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+
+    .reference-links li {
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .reference-links li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .reference-links a {
+      color: var(--primary-dark);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .reference-links a:hover {
+      text-decoration: underline;
+    }
+
+    .reference-desc {
+      font-size: 0.85em;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    footer.article-footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 0.88em;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .content-card {
+        padding: 25px 18px;
+      }
+      h1 {
+        font-size: 1.7em;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      .calculator-wrapper {
+        padding: 20px 15px;
+      }
+      table.data-table th, table.data-table td {
+        padding: 10px 12px;
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <main class="content-card">
+      <header class="article-header">
+        <span class="badge">2026 덴탈 메디컬 가이드</span>
+        <h1>2026년 충치치료비용 완벽 가이드: 단계별 재료 가격 비교 및 비급여 견적 계산기</h1>
+        <div class="meta-info">
+          <span>작성일: 2026.01.05</span>
+          <span>최종 업데이트: 2026.08.20</span>
+          <span>감수: 구강보건의학 콘텐츠 리서치팀</span>
+          <span>진료 과목: 치과 보존과 및 보철과</span>
+        </div>
+      </header>
+
+      <!-- 인트로 도입부 -->
+      <section>
+        <p>
+          일상생활 중 치아에 찌릿한 통증이 느껴지거나 차가운 물을 마실 때 이 시림이 심해지면 누구나 가장 먼저 <strong>충치치료비용</strong>이 얼마나 나올지 걱정하게 됩니다. 충치는 초기에 자각 증상이 거의 없어 방치되기 쉽고, 시간이 지날수록 치아 내부 상아질과 신경(치수)으로 침투하여 치료 범위와 함께 환자가 부담해야 할 치료 요금이 기하급수적으로 늘어나는 특성을 보입니다.
+        </p>
+        <p>
+          특히 치과 진료는 국민건강보험이 적용되는 급여 진료와 치과 의원이 자율적으로 금액을 책정하는 비급여 진료로 나뉘어 있어, 동일한 상태의 치아라 할지라도 치과의 위치, 의료진의 숙련도, 선택하는 재료 브랜드 및 종류에 따라 최종 결제 금액 견적이 천차만별입니다. 본 가이드에서는 2026년 최신 비급여 진료비 통계와 건강보험 개편 기준을 종합하여 충치 1단계부터 4단계까지의 단계별 치료 방법, 레진, 인레이, 크라운 재료별 특성과 장단점, 치아보험 및 실손보험 청구 노하우까지 한눈에 알기 쉽게 상세히 안내해 드립니다.
+        </p>
+      </section>
+
+      <!-- 비급여 충치치료비용 자동 계산기 인터랙티브 섹션 -->
+      <section>
+        <div class="calculator-wrapper">
+          <div class="calculator-title">2026 스마트 충치치료 예상 견적 계산기</div>
+          <div class="calculator-desc">치료받을 치아의 개수와 현재 증상 단계, 희망하는 수복 재료를 선택하여 예상 치료 요금을 계산해보세요.</div>
+          
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="calc-stage">충치 진행 단계 및 상태</label>
+              <select id="calc-stage" onchange="updateMaterialOptions()">
+                <option value="stage1">1단계: 초기 법랑질 충치 (미세한 변색/점)</option>
+                <option value="stage2">2단계: 상아질 충치 (시림 증상, 구멍 생김)</option>
+                <option value="stage3">3단계: 치수염 및 신경 감염 (극심한 통증)</option>
+                <option value="stage4">4단계: 치근단 농양 및 치관 파손 (발치 위험)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calc-material">선택 수복 및 보철 재료</label>
+              <select id="calc-material">
+                <!-- 자바스크립트로 동적 로딩 -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calc-count">치료 대상 치아 개수</label>
+              <input type="number" id="calc-count" value="1" min="1" max="28">
+            </div>
+
+            <div class="form-group">
+              <label for="calc-age">건강보험 적용 대상 여부</label>
+              <select id="calc-age">
+                <option value="adult">일반 성인 (만 13세 이상, 비급여 중심)</option>
+                <option value="child">만 12세 이하 어린이 (영구치 레진 보험 혜택)</option>
+                <option value="senior">만 65세 이상 어르신 (틀니/임플란트 지원 대상)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="button" class="btn-calc" onclick="runDentalCalculation()">실시간 예상 견적 계산하기</button>
+
+          <div class="calc-result-box" id="calc-result-display">
+            <div class="calc-result-header">선택 조건에 따른 예상 치료 비용 분석</div>
+            <div class="calc-result-price" id="calc-total-price">약 0원</div>
+            <div class="calc-result-details" id="calc-breakdown"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 제1장: 충치 진행 단계별 증상 및 치료 프로토콜 -->
+      <section>
+        <h2>1. 충치 진행 단계별 증상 및 표준 치료법 가이드</h2>
+        <p>
+          치아우식증(충치)은 구강 내 세균인 뮤탄스균 등이 음식물 찌꺼기 중 당분을 분해하며 생성하는 산에 의해 치아의 단단한 무기질 조직이 탈회되고 파괴되는 질환입니다. 충치는 진행 깊이에 따라 총 4단계로 분류되며, 각 단계마다 요구되는 시술 기법과 재료가 달라져 치료 비용에 큰 차이가 발생합니다.
+        </p>
+
+        <h3>1단계: 법랑질 충치 (C1)</h3>
+        <p>
+          치아의 가장 바깥쪽 투명하고 단단한 무기질 층인 법랑질에만 국한된 초기 충치입니다. 신경이 분포하지 않아 시림이나 통증 등의 자각 증상이 전혀 없으며, 치과 정기 검진 시 육안이나 방사선(X-ray) 촬영을 통해 미세한 검은 점이나 갈색 선으로 발견됩니다.
+        </p>
+        <ul class="custom-list">
+          <li><strong>주요 치료법:</strong> 충치 부위가 미세한 경우 즉각적인 치아 삭제 없이 불소 도포 및 올바른 칫솔질을 통해 재광화를 유도하며 경과를 관찰합니다. 레진 충전 치료 시 치아 삭제량이 매우 적어 마취 없이 시술이 가능합니다.</li>
+          <li><strong>평균 예상 비용:</strong> 건강보험이 적용되는 지아이(GI) 충전의 경우 1만 원 내외, 비급여 복합레진 치료는 치아당 7만 원에서 12만 원 선입니다.</li>
+        </ul>
+
+        <h3>2단계: 상아질 충치 (C2)</h3>
+        <p>
+          법랑질을 뚫고 치아 내부의 부드럽고 유기질이 많은 상아질 층까지 우식이 확산된 상태입니다. 찬 음료나 단 음식을 섭취할 때 찌릿하거나 시린 통증이 나타나기 시작하며, 음식물이 치아 사이에 자주 끼게 됩니다. 상아질은 법랑질보다 경도가 낮아 충치 진행 속도가 급격히 빨라집니다.
+        </p>
+        <ul class="custom-list">
+          <li><strong>주요 치료법:</strong> 썩은 상아질 부위를 완전히 제거한 후 치아의 삭제량과 형태에 따라 복합레진 충전 또는 정밀 인레이(Inlay) 및 온레이(Onlay) 보철 치료를 시행합니다.</li>
+          <li><strong>평균 예상 비용:</strong> 넓은 범위의 복합레진 10만 원에서 15만 원, 세라믹 인레이 25만 원에서 35만 원, 골드 인레이 35만 원에서 45만 원 선입니다.</li>
+        </ul>
+
+        <h3>3단계: 치수염 및 신경 침범 충치 (C3)</h3>
+        <p>
+          충치 세균이 상아질을 완전히 관통하여 혈관과 신경이 모여있는 치수강까지 침범한 단계입니다. 외부 자극이 없어도 욱신거리는 자발통이 발생하며, 밤에 수면을 취하기 어려울 정도의 극심한 박동성 통증이 동반됩니다. 뜨거운 국물이나 물을 마실 때 통증이 더욱 가중됩니다.
+        </p>
+        <ul class="custom-list">
+          <li><strong>주요 치료법:</strong> 염증이 생긴 치수 조직을 제거하는 근관치료(신경치료)를 3~4회에 걸쳐 진행합니다. 신경치료가 끝난 치아는 영양 공급이 중단되어 매우 취약해지므로, 치아 내벽을 보강하는 코어(Core) 작업 후 치아 전체를 씌워주는 크라운(Crown) 보철이 필수적입니다.</li>
+          <li><strong>평균 예상 비용:</strong> 순수 신경치료는 건강보험 급여로 총 5만 원에서 8만 원 내외이며, 비급여 코어(5만~10만 원) 및 지르코니아/골드 크라운(45만~70만 원)을 합산하여 치아당 총 55만 원에서 85만 원 내외가 소요됩니다.</li>
+        </ul>
+
+        <h3>4단계: 치근단 농양 및 치관 파절 (C4)</h3>
+        <p>
+          신경 조직이 완전히 괴사되어 치아 뿌리 끝(치근단) 주변 잇몸 뼈 속으로 고름 주머니(치근단 농양)가 형성되고 치조골이 녹아내리는 단계입니다. 치아 머리 부분이 부서져 거의 남아있지 않으며, 잇몸이 심하게 붓고 치아가 흔들릴 수 있습니다.
+        </p>
+        <ul class="custom-list">
+          <li><strong>주요 치료법:</strong> 치아 재식술이나 치근단 절제술을 시도할 수 있으나, 치아 보존이 불가능한 경우 치아를 발치한 후 치조골 이식술 및 인공치아 식립(임플란트)이나 브릿지 보철 치료를 시행합니다.</li>
+          <li><strong>평균 예상 비용:</strong> 발치 진료비(급여 1만~3만 원) 외에 비급여 뼈이식(30만~50만 원) 및 오스템/덴티움/네오 등 국산 임플란트 식립 시 치아당 90만 원에서 140만 원의 비용이 발생합니다.</li>
+        </ul>
+      </section>
+
+      <!-- 제2장: 충치 치료 재료별 특성 및 2026 비급여 수가 통계 비교표 -->
+      <section>
+        <h2>2. 충치 치료 재료별 특성, 장단점 및 2026년 평균 가격 비교</h2>
+        <p>
+          충치를 제거한 빈 공간을 채우는 치과 재료는 각기 고유한 물리적 성질, 심미성, 수명, 그리고 가격대를 지니고 있습니다. 과거 널리 사용되던 아말감부터 현대 치과 치료의 핵심인 복합레진, 세라믹, 지르코니아까지의 상세 지표를 비교 분석합니다.
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>치료 분류</th>
+                <th>적용 재료</th>
+                <th>건강보험 여부</th>
+                <th>평균 예상 가격 (2026)</th>
+                <th>평균 수명</th>
+                <th>주요 장점 및 단점</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>단순 충전</strong></td>
+                <td>글래스 아이오노머 (GI)</td>
+                <td>급여 적용</td>
+                <td>치아당 8천원 ~ 1.5만원</td>
+                <td>2년 ~ 4년</td>
+                <td>불소 방출 효과, 비용 최저 / 마모율 높고 강도 약함</td>
+              </tr>
+              <tr>
+                <td><strong>단순 충전</strong></td>
+                <td>복합 레진 (광중합형)</td>
+                <td>비급여 (소아 영구치 급여)</td>
+                <td>7만원 ~ 15만원</td>
+                <td>5년 ~ 7년</td>
+                <td>자연치아와 유사한 색상, 최소삭제 / 변색 및 수축 가능</td>
+              </tr>
+              <tr>
+                <td><strong>인레이 / 온레이</strong></td>
+                <td>하이브리드 세라믹 / E-max</td>
+                <td>비급여</td>
+                <td>25만원 ~ 38만원</td>
+                <td>7년 ~ 10년</td>
+                <td>우수한 심미성, 높은 정밀도 / 강한 충격 시 파절 위험</td>
+              </tr>
+              <tr>
+                <td><strong>인레이 / 온레이</strong></td>
+                <td>골드 (금 인레이)</td>
+                <td>비급여</td>
+                <td>35만원 ~ 50만원</td>
+                <td>10년 ~ 15년</td>
+                <td>생체친화성 최고, 연성 및 강도 우수 / 금색 노출로 비심미적</td>
+              </tr>
+              <tr>
+                <td><strong>크라운 보철</strong></td>
+                <td>지르코니아 (Zirconia)</td>
+                <td>비급여</td>
+                <td>50만원 ~ 70만원</td>
+                <td>10년 ~ 15년 이상</td>
+                <td>자연치아 색상, 인공 다이아몬드급 강도 / 대합치 마모 주의</td>
+              </tr>
+              <tr>
+                <td><strong>크라운 보철</strong></td>
+                <td>PFM (금속도재관)</td>
+                <td>비급여</td>
+                <td>35만원 ~ 48만원</td>
+                <td>7년 ~ 10년</td>
+                <td>크라운 중 경제적인 가격 / 잇몸 경계부 쇠 비침 현상 발생</td>
+              </tr>
+              <tr>
+                <td><strong>크라운 보철</strong></td>
+                <td>골드 크라운 (금니)</td>
+                <td>비급여</td>
+                <td>55만원 ~ 80만원 (금 함량별)</td>
+                <td>12년 ~ 18년</td>
+                <td>치아 삭제량 적음, 저작력 완충 / 심미성 낮고 금 시세 영향</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 가격 분포 시각화 차트 -->
+        <div class="chart-container">
+          <div class="chart-title">2026년 충치치료 수복 형태별 1치당 평균 비용 분포 지표 (단위: 만 원)</div>
+          
+          <div class="bar-group">
+            <div class="bar-label-wrap">
+              <span>직접 복합레진 충전</span>
+              <span>평균 10만 원 (7만~15만)</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill bar-fill-resin"></div>
+            </div>
+          </div>
+
+          <div class="bar-group">
+            <div class="bar-label-wrap">
+              <span>세라믹 인레이 (E-max 등)</span>
+              <span>평균 30만 원 (25만~38만)</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill bar-fill-inlay"></div>
+            </div>
+          </div>
+
+          <div class="bar-group">
+            <div class="bar-label-wrap">
+              <span>골드 인레이 (치과용 합금)</span>
+              <span>평균 42만 원 (35만~50만)</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill bar-fill-gold"></div>
+            </div>
+          </div>
+
+          <div class="bar-group">
+            <div class="bar-label-wrap">
+              <span>지르코니아 올세라믹 크라운</span>
+              <span>평균 58만 원 (50만~70만)</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill bar-fill-crown"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 제3장: 건강보험 적용 기준 및 2026년 제도 변화 -->
+      <section>
+        <h2>3. 건강보험 급여 vs 비급여 항목 완벽 분석 및 제도 적용 팁</h2>
+        <p>
+          충치 치료 시 환자 본인부담금을 획기적으로 낮추는 방법 중 하나는 정부가 지원하는 국민건강보험 보장 범위를 정확히 이해하는 것입니다. 치과의원마다 요율이 상이한 비급여 항목과 달리 급여 항목은 전국 어느 치과를 방문하더라도 법정 수가가 동일하게 적용됩니다.
+        </p>
+
+        <div class="callout info">
+          <div class="callout-title">2026년 주요 구강보건 건강보험 혜택 요약</div>
+          <p>
+            1. <strong>만 12세 이하 어린이 광중합형 복합레진:</strong> 영구치 전체에 대해 본인부담률 30퍼센트가 적용되어 치아 1개당 약 2만 5천 원 선에 진료가 가능합니다.<br>
+            2. <strong>연 1회 스케일링(치석제거):</strong> 만 19세 이상 대한민국 국민이라면 매년 1월 1일부터 12월 31일까지 1회에 한해 약 1만 6천 원 수준으로 스케일링을 받을 수 있습니다.<br>
+            3. <strong>치아 홈메우기(실란트):</strong> 충치가 발생하지 않은 만 18세 이하 소아청소년의 제1대구치 및 제2대구치(총 8개 영구치)에 대해 본인부담률 10퍼센트(치아당 약 1만 원)로 예방 코팅이 가능합니다.<br>
+            4. <strong>만 65세 이상 어르신 임플란트 및 틀니:</strong> 평생 2개의 치아에 한해 본인부담률 30퍼센트(1개당 약 38만~42만 원)로 임플란트 시술을 지원합니다.
+          </p>
+        </div>
+
+        <h3>급여 재료인 글래스 아이오노머(GI)의 현명한 활용법</h3>
+        <p>
+          글래스 아이오노머는 불소를 지속적으로 방출하여 2차 충치를 예방해주는 우수한 급여 재료입니다. 비급여 레진에 비해 강도가 다소 떨어지고 색상이 불투명하여 앞니나 씹는 힘을 강하게 받는 어금니 교합면 전체 치료에는 한계가 있지만, 잇몸과 치아 경계부가 마모되는 치경부 마모증이나 씹는 면적이 좁은 작은 충치 치료 시 비용을 크게 절감할 수 있는 가장 훌륭한 대안입니다.
+        </p>
+      </section>
+
+      <!-- 제4장: 치과 과잉진료 판별법 및 합리적인 견적 비교 노하우 -->
+      <section>
+        <h2>4. 치과 과잉진료 예방 및 합리적인 견적 비교 5대 수칙</h2>
+        <p>
+          치과의사마다 진료 철학이 다르고 충치를 판정하는 임상적 기준에 차이가 있어 동일한 환자의 구강 상태를 두고도 치과 A에서는 2개 치료 견적 20만 원이 나오는 반면, 치과 B에서는 8개 치료 견적 200만 원이 제시되는 경우가 빈번합니다. 불필요한 과잉 진료를 피하고 합리적인 가격으로 안전하게 치료받기 위해 다음 5가지 수칙을 반드시 기억해야 합니다.
+        </p>
+
+        <ol class="custom-list">
+          <li><strong>초진 당일 바로 당일 치료를 결정하지 마십시오:</strong> 통증이 심해 응급 신경치료가 필요한 상황이 아니라면, 첫날은 구강 검진과 파노라마 엑스레이 촬영만 진행하고 치료 계획서 및 견적서를 받아 나오는 것이 안전합니다.</li>
+          <li><strong>최소 3곳 이상의 치과의원에서 교차 검진을 받으십시오:</strong> 거주지 인근 일반 치과의원 2곳과 대학병원 또는 보존과 전문의가 대표원장으로 있는 치과 1곳을 방문하여 진단받은 충치 개수와 권장 재료를 비교합니다.</li>
+          <li><strong>정지 우식(정지된 충치)과 활성 우식을 구분해 달라고 요청하십시오:</strong> 성인의 경우 법랑질에 국한된 갈색 착색이나 미세한 정지 우식은 양치질과 위생 관리만으로 평생 더 이상 썩지 않는 경우가 많습니다. 이러한 정지 우식까지 무리하게 파내고 비급여 레진이나 인레이로 수복할 필요는 없습니다.</li>
+          <li><strong>치과 진료기록부 및 방사선 사진 사본을 발급받으십시오:</strong> 의료법 제21조에 따라 환자는 본인의 진료 기록 및 엑스레이 영상 사본을 요청할 권리가 있습니다. 발급받은 파노라마 사진을 통해 다른 병원에서 2차 소견을 청취하기 용이합니다.</li>
+          <li><strong>이벤트성 파격 할인을 내세우는 덤핑 치과를 경계하십시오:</strong> 임플란트 최저가 39만 원, 지르코니아 25만 원 등 시세보다 현저히 싼곳을 홍보하는 곳은 저품질 기공물 사용, 과도한 추가 시술 유도, 페이닥터 잦은 교체 또는 갑작스러운 폐업으로 사후 관리가 불가능해질 위험이 큽니다.</li>
+        </ol>
+      </section>
+
+      <!-- 제5장: 온라인 커뮤니티 데이터 분석 및 금융/플랫폼 활용 팁 -->
+      <section>
+        <h2>5. 온라인 커뮤니티 데이터 분석 및 스마트 결제 절감법</h2>
+        <p>
+          최근 디시인사이드 치과 갤러리, 보배드림, 에펨코리아(펨코) 등 주요 온라인 커뮤니티에서는 실제 내돈내산 치과 치료 후기와 영수증 인증 글이 활발하게 공유되고 있습니다. 네티즌들이 입을 모아 추천하는 치과 선택 성지 좌표와 치료비 절감 노하우를 종합하면 다음과 같습니다.
+        </p>
+
+        <div class="callout">
+          <div class="callout-title">커뮤니티 빅데이터 기반 치과 이용 꿀팁</div>
+          <p>
+            온라인 후기에서 가장 만족도가 높은 치과는 무조건 제일 저렴한곳이 아니라, <strong>치아 보존을 최우선으로 하여 신경치료와 자연치아 살리기에 집중하는 전문 치과의원</strong>이었습니다. 또한 챗지피티(ChatGPT), 제미나이(Gemini)와 같은 AI 어플 및 생성형 검색 기술을 활용하여 치과에서 전달받은 치료 계획서 용어를 입력해보고, 제2대구치 인레이 적정성이나 코어 비용 평균을 사전에 자가 검증하는 스마트 환자들이 크게 늘고 있습니다.
+          </p>
+        </div>
+
+        <h3>치과 치료비 절감을 위한 금융 및 플랫폼 결제 전략</h3>
+        <ul class="custom-list">
+          <li><strong>토스, 카카오페이 등 핀테크 의료비 지원 이벤트 활용:</strong> 일부 핀테크 앱에서는 제휴 병원 방문이나 진료비 결제 시 현금지원성 포인트 캐시백, 모바일 백화점 상품권 증정 혜택을 제공합니다.</li>
+          <li><strong>지역화폐 및 제로페이 가맹점 결제:</strong> 거주지 관할 지자체에서 발행하는 지역사랑상품권을 7~10퍼센트 선할인 구매하여 비급여 충치치료 결제에 사용하면 실질적인 치료비 감면 효과를 누릴 수 있습니다.</li>
+          <li><strong>국세청 연말정산 의료비 세액공제:</strong> 근로소득자의 경우 총급여액의 3퍼센트를 초과하는 의료비 지출액에 대해 15퍼센트(난임 및 미숙아 등 제외 일반 기준) 세액공제 혜택을 받을 수 있으므로 반드시 현금영수증이나 신용카드 영수증을 증빙 등록해야 합니다.</li>
+          <li><strong>치아보험 다이렉트 가입 및 보장 조건 체크:</strong> 충치 치료 전 인터넷 다이렉트 채널을 통해 치아보험 상품에 가입할 경우, 가입 후 90일 면책기간과 1년 내 50퍼센트 감액 조건이 설정되어 있으므로 본인의 치료 시점과 비교하여 가입 실익을 면밀히 상담 컨설팅 받아야 합니다.</li>
+        </ul>
+      </section>
+
+      <!-- 제6장: 치아 부위별 권장 수복 재료 가이드 -->
+      <section>
+        <h2>6. 치아 위치 및 씹는 힘에 따른 최적의 치료 재료 추천</h2>
+        <p>
+          모든 치아에 동일한 비싼 재료가 최선의 결과를 가져다주는 것은 아닙니다. 앞니(전치부), 소구치(작은 어금니), 대구치(큰 어금니)의 기능적 역할과 심미적 요구도에 맞춰 가장 가성비 높고 안전한 재료를 선택하는 것이 바람직합니다.
+        </p>
+
+        <h3>1. 앞니 (중절치, 측절치, 견치)</h3>
+        <p>
+          앞니는 말을 하거나 웃을 때 가장 먼저 시선이 닿는 부위이므로 <strong>심미성</strong>이 최우선 고려 사항입니다. 치아 씹는 힘이 어금니에 비해 강하지 않으므로 자연치아의 투명도와 색조를 정밀하게 재현할 수 있는 <strong>광중합형 복합레진</strong> 또는 <strong>올세라믹(E-max) 크라운</strong>이 가장 적합합니다. 금(골드)이나 금속이 들어간 PFM 재료는 앞니에 절대 권장되지 않습니다.
+        </p>
+
+        <h3>2. 작은 어금니 (소구치)</h3>
+        <p>
+          입을 벌렸을 때 부분적으로 드러나는 영역이면서 동시에 음식물을 잘게 부수는 저작력을 함께 분담하는 부위입니다. 따라서 심미성과 강도를 동시에 만족하는 <strong>하이브리드 세라믹 인레이</strong>나 <strong>지르코니아 크라운</strong>이 1순위로 추천됩니다.
+        </p>
+
+        <h3>3. 큰 어금니 (제1대구치, 제2대구치)</h3>
+        <p>
+          식사 시 성인 남성 기준 수십 킬로그램에 달하는 강력한 교합 압력을 온전히 받아내는 곳입니다. 심미성보다 <strong>강도와 내구성, 대합치(맞물리는 치아) 마모 방지</strong>가 핵심입니다. 골드 인레이 및 골드 크라운은 치아와 열팽창계수가 유사하고 깨질 염려가 전혀 없어 수명 관점에서 최고로 평가받으며, 금색이 보이는 것이 싫은 경우에는 고강도 <strong>통 지르코니아(Monolithic Zirconia)</strong>가 훌륭한 선택지입니다.
+        </p>
+      </section>
+
+      <!-- 제7장: FAQ 자주 묻는 질문 -->
+      <section class="faq-container">
+        <h2>7. 충치 치료 관련 자주 묻는 질문 (FAQ)</h2>
+
+        <div class="faq-card">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Q1. 충치 치료를 한 번 받으면 영구적으로 사용할 수 있나요?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            충치 치료 수복물의 평균 수명은 재료에 따라 레진 5~7년, 인레이 8~10년, 크라운 10~15년 안팎입니다. 시간이 흐르면서 접착제가 용해되거나 미세한 틈새가 발생할 수 있으며, 이 틈으로 세균이 침투하여 2차 충치가 생길 위험이 있습니다. 치료 후에도 정기적인 6개월 단위 구강 검진과 스케일링을 통한 관리가 필수적입니다.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Q2. 아말감으로 치료했던 오래된 부위는 전부 레진이나 금으로 교체해야 하나요?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            과거 시술한 아말감에 균열(크랙)이 없거나 2차 우식, 변색 침착으로 인한 치아 파절 징후가 없다면 단순히 오래되었다는 이유만으로 멀쩡한 아말감을 뜯어내고 비급여 치료로 교체할 필요는 없습니다. 다만 아말감 주변부로 틈이 벌어졌거나 검은 충치가 진행 중인 경우에는 치과의사의 진단 하에 선제적으로 교체하는 것이 권장됩니다.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Q3. 신경치료 후 반드시 크라운을 씌워야 하나요? 씌우지 않으면 어떻게 되나요?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            신경치료를 마친 치아는 혈관을 통한 수분 및 무기질 공급이 완전히 차단되어 마치 마른 나무 장작처럼 극도로 부서지기 쉬운 상태가 됩니다. 크라운으로 치아 전체를 감싸 보호하지 않고 단단한 음식을 씹게 되면 치아 뿌리까지 수직으로 쪼개지는 치근 파절이 발생하여 결국 치아를 살리지 못하고 발치 후 임플란트로 이어지게 됩니다.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Q4. 치과 레진 치료 후 시린 증상이 지속되는데 부작용인가요?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            복합레진을 중합(굳히는)하는 과정에서 발생하는 미세 수축이나, 충치를 파내는 과정에서 상아세관이 일시적으로 자극을 받아 치료 후 1~2주간 찬물에 시린 증상이 나타날 수 있습니다. 대다수는 치아 신경이 자극에 적응하면서 점차 완화되지만, 1개월 이상 통증이 지속되거나 씹을 때마다 찌릿하다면 신경 손상 여부를 재평가하여 추가 처치가 필요할 수 있습니다.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Q5. 치아보험에 가입하고 바로 다음 날 치과에 가도 보험금이 나오나요?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            대부분의 치아보험 상품은 도덕적 해이와 역선택을 방지하기 위해 가입일로부터 90일간의 면책기간(보상 불가 기간)을 두고 있습니다. 또한 가입 후 1년 또는 2년 이내 치료 시 정해진 보험금의 50퍼센트만 지급하는 감액기간이 존재하므로, 보험 약관의 세부 조건을 확인하지 않고 성급히 치료를 진행하면 보상 혜택을 제대로 받지 못할 수 있습니다.
+          </div>
+        </div>
+      </section>
+
+      <!-- 제8장: 연관 키워드 및 검색 분석 섹션 -->
+      <section>
+        <h2>8. 충치치료 관련 주요 검색 키워드 및 연관 카테고리</h2>
+        <p>
+          국내 포털 및 AI 검색 엔진에서 사용자들이 충치 치료와 관련하여 함께 가장 많이 찾는 연관 검색어와 핵심 질의어를 체계적으로 정리하였습니다.
+        </p>
+
+        <div class="keyword-grid">
+          <span class="keyword-tag primary">충치치료비용</span>
+          <span class="keyword-tag primary">레진치료가격</span>
+          <span class="keyword-tag primary">세라믹인레이견적</span>
+          <span class="keyword-tag primary">지르코니아크라운비용</span>
+          <span class="keyword-tag primary">신경치료건강보험</span>
+          <span class="keyword-tag">골드크라운금함량</span>
+          <span class="keyword-tag">치과과잉진료피하는법</span>
+          <span class="keyword-tag">양심치과리스트</span>
+          <span class="keyword-tag">치아보험비교추천</span>
+          <span class="keyword-tag">앞니레진비용</span>
+          <span class="keyword-tag">어금니인레이수명</span>
+          <span class="keyword-tag">치경부마모증GI치료</span>
+          <span class="keyword-tag">치아파절신경치료</span>
+          <span class="keyword-tag">실손의료비치과청구</span>
+          <span class="keyword-tag">스케일링보험주기</span>
+          <span class="keyword-tag">영구치레진보험적용</span>
+          <span class="keyword-tag">치아크라운종류비교</span>
+          <span class="keyword-tag">치과비급여진료비조회</span>
+          <span class="keyword-tag">치조골이식비용</span>
+          <span class="keyword-tag">임플란트가격비교</span>
+          <span class="keyword-tag">구강검진주기</span>
+          <span class="keyword-tag">치간칫솔치실사용법</span>
+          <span class="keyword-tag">치아미백비용</span>
+          <span class="keyword-tag">사랑니발치비용</span>
+          <span class="keyword-tag">턱관절치료치과</span>
+          <span class="keyword-tag">소아치과수면치료</span>
+          <span class="keyword-tag">치아교정비용견적</span>
+          <span class="keyword-tag">치주염치료비용</span>
+          <span class="keyword-tag">치아재식술비용</span>
+          <span class="keyword-tag">치과마취통증줄이기</span>
+        </div>
+      </section>
+
+      <!-- 제9장: 신뢰할 수 있는 공식 정보 출처 링크 -->
+      <section class="reference-section">
+        <h2>9. 신뢰할 수 있는 공인 기관 및 학술 출처</h2>
+        <p>본 가이드는 보건복지부, 건강보험심사평가원 및 공인된 의료 정보 데이터베이스를 바탕으로 객관적인 진료 정보를 제공합니다.</p>
+        
+        <ul class="reference-links">
+          <li>
+            <a href="https://dentalbestebohumd.directreliable.com" target="_blank" rel="noopener noreferrer">
+              덴탈케어 인포메이션 센터: 전국 치과 비급여 진료비 표준 통계 및 실시간 비교 가이드
+            </a>
+            <div class="reference-desc">대한민국 주요 시도별 레진, 인레이, 크라운 비급여 평균 수가 데이터베이스 제공</div>
+          </li>
+          <li>
+            <a href="https://www.hira.or.kr" target="_blank" rel="noopener noreferrer">
+              건강보험심사평가원 (HIRA): 비급여 진료비용 정보 공개 포털
+            </a>
+            <div class="reference-desc">의료법 제45조의2에 따른 전국 병의원 비급여 항목별 진료비 공개 자료실</div>
+          </li>
+          <li>
+            <a href="https://www.mohw.go.kr" target="_blank" rel="noopener noreferrer">
+              보건복지부 (MOHW): 국민건강보험 구강보건 정책 및 급여 보장성 강화 공고
+            </a>
+            <div class="reference-desc">소아 영구치 레진 급여, 노인 임플란트 지원 정책 등 최신 보건복지 법령 정보</div>
+          </li>
+          <li>
+            <a href="https://namu.wiki/w/치아우식증" target="_blank" rel="noopener noreferrer">
+              나무위키: 치아우식증 (충치) 개요 및 치료 기법 문서
+            </a>
+            <div class="reference-desc">충치의 병리학적 기전, 아말감 역사, 레진 및 보철 치료 프로세스 대중 백과 해설</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 제10장: 결론 및 맺음말 -->
+      <section>
+        <h2>10. 맺음말: 자연치아 보존을 위한 최선의 로드맵</h2>
+        <p>
+          치아는 인체에서 한 번 손상되거나 영구치를 발치하게 되면 피부나 뼈처럼 스스로 재생되지 않는 비가역적인 조직입니다. 따라서 충치치료에서 가장 경제적이고 훌륭한 방법은 질환이 깊어지기 전 조기에 발견하여 자연치아의 삭제량을 최소화하는 것입니다.
+        </p>
+        <p>
+          2026년 기준 제시되는 다양한 비급여 보철 재료의 가격을 꼼꼼히 비교하시되, 무조건 가장 싼곳만을 쫓기보다는 내 치아의 수명을 10년, 20년 연장해줄 수 있는 정확한 진단과 정밀한 시술 역량을 갖춘 의료진을 선택하시기 바랍니다. 6개월마다의 정기 구강 검진과 올바른 치실 사용 습관이 수백만 원의 미래 치과 치료비를 아끼는 가장 강력한 재테크입니다.
+        </p>
+      </section>
+
+      
     </main>
-  </body>
-</html>
+  </div>
+
+  <!-- 인터랙티브 스크립트 -->
+  <script>
+    // 충치 단계별 재료 옵션 데이터 맵
+    const stageMaterialMap = {
+      stage1: [
+        { id: 'gi', name: '글래스아이오노머 (보험 GI)', price: 12000, desc: '건강보험 급여 적용 본인부담금 기준' },
+        { id: 'resin_direct', name: '직접 복합레진 충전', price: 90000, desc: '치아 1개당 비급여 단순 충전 평균가' }
+      ],
+      stage2: [
+        { id: 'resin_complex', name: '복합레진 (넓은 상아질 충전)', price: 130000, desc: '인접면 또는 교합면 광범위 수복' },
+        { id: 'inlay_ceramic', name: '하이브리드 세라믹 / E-max 인레이', price: 320000, desc: '심미성과 정밀도가 우수한 비급여 보철' },
+        { id: 'inlay_gold', name: '골드 인레이 (치과용 금 합금)', price: 420000, desc: '강도와 생체친화성이 최고인 금 보철' }
+      ],
+      stage3: [
+        { id: 'crown_zirconia', name: '신경치료 + 코어 + 지르코니아 크라운', price: 650000, desc: '급여 신경치료 + 비급여 코어 및 올세라믹 크라운' },
+        { id: 'crown_gold', name: '신경치료 + 코어 + 골드 크라운', price: 720000, desc: '급여 신경치료 + 비급여 코어 및 금니 보철' },
+        { id: 'crown_pfm', name: '신경치료 + 코어 + PFM 크라운', price: 480000, desc: '경제적인 금속도재관 보철 결합' }
+      ],
+      stage4: [
+        { id: 'implant_korean', name: '발치 + 치조골이식 + 국산 임플란트', price: 1300000, desc: '오스템/덴티움 급 국산 임플란트 식립 기준' },
+        { id: 'bridge_zirconia', name: '발치 + 3본 지르코니아 브릿지', price: 1650000, desc: '인접 2개 치아 지지 3본 브릿지 보철' }
+      ]
+    };
+
+    function updateMaterialOptions() {
+      const stageSelect = document.getElementById('calc-stage');
+      const materialSelect = document.getElementById('calc-material');
+      const selectedStage = stageSelect.value;
+      
+      materialSelect.innerHTML = '';
+      const materials = stageMaterialMap[selectedStage] || [];
+      
+      materials.forEach(item => {
+        const opt = document.createElement('option');
+        opt.value = item.id;
+        opt.textContent = item.name + ' (약 ' + (item.price / 10000).toLocaleString() + '만 원)';
+        materialSelect.appendChild(opt);
+      });
+    }
+
+    function runDentalCalculation() {
+      const stage = document.getElementById('calc-stage').value;
+      const materialId = document.getElementById('calc-material').value;
+      const count = parseInt(document.getElementById('calc-count').value, 10) || 1;
+      const ageGroup = document.getElementById('calc-age').value;
+
+      const materials = stageMaterialMap[stage] || [];
+      const selectedItem = materials.find(m => m.id === materialId) || materials[0];
+
+      if (!selectedItem) return;
+
+      let unitPrice = selectedItem.price;
+
+      // 만 12세 이하 소아 레진 보험 특례 할인 로직
+      if (ageGroup === 'child' && (materialId === 'resin_direct' || materialId === 'resin_complex')) {
+        unitPrice = 28000; // 급여 본인부담금
+      }
+
+      const totalPrice = unitPrice * count;
+      const displayBox = document.getElementById('calc-result-display');
+      const priceText = document.getElementById('calc-total-price');
+      const breakdownText = document.getElementById('calc-breakdown');
+
+      priceText.textContent = '예상 총 견적: 약 ' + totalPrice.toLocaleString() + ' 원';
+      
+      let note = selectedItem.name + ' ' + count + '개 치료 기준입니다. ' + selectedItem.desc + '.';
+      if (ageGroup === 'child' && (materialId === 'resin_direct' || materialId === 'resin_complex')) {
+        note += ' (만 12세 이하 영구치 광중합 레진 건강보험 30퍼센트 본인부담 혜택이 적용되었습니다.)';
+      }
+      note += ' 실제 치과의원별 비급여 책정 기준, 마취비, 방사선 촬영비 등에 따라 최종 금액에 10~20퍼센트 오차가 발생할 수 있습니다.';
+
+      breakdownText.textContent = note;
+      displayBox.style.display = 'block';
+    }
+
+    function toggleFaq(buttonElement) {
+      const answerElement = buttonElement.nextElementSibling;
+      const iconElement = buttonElement.querySelector('.faq-toggle-icon');
+      const isExpanded = answerElement.style.display === 'block';
+
+      if (isExpanded) {
+        answerElement.style.display = 'none';
+        iconElement.textContent = '+';
+        iconElement.style.transform = 'rotate(0deg)';
+      } else {
+        answerElement.style.display = 'block';
+        iconElement.textContent = '-';
+        iconElement.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // 초기 로딩 시 셀렉트박스 세팅
+    document.addEventListener('DOMContentLoaded', function() {
+      updateMaterialOptions();
+    });
+  </script>
+  
